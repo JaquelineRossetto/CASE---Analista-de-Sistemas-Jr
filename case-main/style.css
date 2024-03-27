@@ -1,0 +1,502 @@
+/*IMAGEM DE FUNDO*/
+* {
+  background-image: url(Imagens/background.png);
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow-x: hidden; /*scrollbar horizontal */
+  overflow-y: hidden; /*scrollbar vertical */
+}
+
+
+/*'BOTÃO' RETORNAR PARA INDEX*/
+.home img {
+  width: 30px;
+  background: transparent;
+}
+
+
+/*MEU NOME*/
+.nome {
+  color: purple;
+  font-size: larger;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 50%;
+  line-height: 1.3;
+  position: relative;
+  animation: slideDown 2s forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -15rem;
+  }
+
+  100% {
+    top: 0rem;
+  }
+}
+
+
+/*RESUMO DO CURRICULO*/
+.resumo {
+  font-size: medium;
+  text-align: center;
+  color: rgb(46, 7, 81);
+  display: grid;
+  width: 50%;
+  margin-left: 5%;
+  position: relative;
+  animation: slideRight 3s forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    left: -100vw;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+
+/*INFOS*/
+.caixas {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 50%;
+  margin: 2% 2% 2% 5%;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+  background: transparent;
+}
+
+.conhecimentos {
+  border-style: solid;
+  border-color: purple;
+  border-radius: 5%;
+  font-size: 15px;
+  text-decoration: bolder;
+  box-sizing: border-box;
+  width: 200px;
+  height: 150px;
+  margin: 2% 2% 2% 2%;
+  padding: 0% 2% 2% 1.5%;
+  background: rgba(137, 43, 226, 0.255);
+  text-align: center;
+  align-content: center;
+  box-shadow: 0 0 5px 2px #00000076;
+
+  animation: blink 0.8s;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+}
+@keyframes blink {
+  50% {
+    border-color: #fff;
+  }
+}
+.conhecimentos img {
+  width: 45%;
+  background: transparent;
+}
+
+.conhecimentos:hover {
+  background-color: greenyellow;
+  border-color: rgb(210, 0, 140);
+  width: 215px;
+  height: 160px;
+  box-shadow: 0 0 10px 2px #ff14918f;
+}
+
+.formacoes {
+  border-style: solid;
+  border-color: purple;
+  border-radius: 5%;
+  font-size: 15px;
+  text-decoration: bolder;
+  box-sizing: border-box;
+  width: 200px;
+  height: 150px;
+  margin: 2% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
+  background: rgba(137, 43, 226, 0.255);
+  text-align: center;
+  align-content: center;
+  box-shadow: 0 0 5px 2px #00000076;
+  animation: blink 0.8s;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+}
+
+.formacoes img {
+  width: 30%;
+  background: transparent;
+}
+
+.formacoes:hover {
+  background-color: greenyellow;
+  border-color: rgb(210, 0, 140);
+  width: 215px;
+  height: 160px;
+  box-shadow: 0 0 10px 2px #ff14918f;
+}
+
+.outros {
+  border-style: solid;
+  border-color: purple;
+  border-radius: 5%;
+  font-size: 15px;
+  text-decoration: bolder;
+  box-sizing: border-box;
+  width: 200px;
+  height: 150px;
+  margin: 2% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
+  background: rgba(137, 43, 226, 0.255);
+  text-align: center;
+  align-content: center;
+  box-shadow: 0 0 5px 2px #00000076;
+  animation: blink 0.8s;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+}
+
+.outros img {
+  width: 30%;
+  background: transparent;
+}
+
+.outros:hover {
+  background-color: greenyellow;
+  border-color: rgb(210, 0, 140);
+  width: 215px;
+  height: 160px;
+  box-shadow: 0 0 10px 2px #ff14918f;
+}
+
+.grafico {
+  border-style: solid;
+  border-color: purple;
+  border-radius: 5%;
+  font-size: 15px;
+  text-decoration: bolder;
+  box-sizing: border-box;
+  width: 200px;
+  height: 150px;
+  margin: 2% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
+  background: rgba(137, 43, 226, 0.255);
+  text-align: center;
+  align-content: center;
+  box-shadow: 0 0 5px 2px #00000076;
+  animation: blink 0.8s;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+}
+
+.grafico img {
+  width: 30%;
+  background: transparent;
+}
+
+.grafico:hover {
+  background-color: greenyellow;
+  border-color: rgb(210, 0, 140);
+  width: 215px;
+  height: 160px;
+  box-shadow: 0 0 10px 2px #ff14918f;
+}
+
+/*CONTATO */
+.icone img {
+  width: 35px;
+  position: relative;
+}
+
+.icone img:hover {
+  width: 40px;
+}
+
+.icone2 {
+  width: 15px;
+  position: relative;
+}
+
+.rodape {
+  color: white;
+  font-size: 14px;
+  bottom: 3px;
+  right: 3px;
+  position: fixed;
+  text-align: right;
+  width: 40%;
+}
+
+
+/*PÁG CONHECIMENTOS*/
+.titulo1 {
+  width: 60%;
+  text-align: center;
+  color: purple;
+  font-size: 25px;
+  background: transparent;
+  animation: titulo1 2s ease 0s 1 normal forwards;
+}
+
+@keyframes titulo1 {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#titulo11 {
+  text-align: center;
+  color: orangered;
+  font-size: 30px;
+  margin: auto;
+  text-shadow: 1px 1px 1px darkgrey;
+  background: transparent;
+  animation: titulo11 3s ease normal forwards;
+}
+
+@keyframes titulo11 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.conteudo_pag {
+  width: 65%;
+  margin-left: -4rem;
+  display: grid;
+  align-content: center;
+  color: rgb(43, 1, 43);
+}
+
+.conteudo_pag ul {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  animation: pag_conhecimentos 2s ease 0s 1 normal forwards;
+  background: transparent;
+}
+
+@keyframes pag_conhecimentos {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.conteudo_pag ul li {
+  max-width: 10rem;
+  justify-self: center;
+  display: grid;
+  grid-template:
+    "icon"
+    "line"
+    "dot"
+    "title"
+    "descr" 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  text-align: center;
+  background: transparent;
+}
+
+.icone_conhecimento img {
+  width: 2.5rem;
+  background: transparent;
+}
+
+ul li .icone_conhecimento {
+  grid-area: icon;
+  width: 3rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: var(--accent-color);
+  box-shadow: 0rem 0.3rem 0.2rem rgba(0, 0, 0, 0.45),
+    inset 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.45);
+}
+
+.conteudo_pag ul li::before {
+  content: "";
+  grid-area: line;
+  height: 2rem;
+  border-right: 2px dotted currentColor;
+}
+
+.conteudo_pag ul li::after {
+  content: "";
+  grid-area: dot;
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--accent-color);
+  justify-self: center;
+}
+
+.conteudo_pag ul li .title {
+  font-size: 15px;
+  text-align: center;
+  background: transparent;
+}
+
+
+/*FORMAÇÕES*/
+.lista_cursos,
+.lista_cursos * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+  width: 80%;
+}
+
+.lista_cursos {
+  list-style: none;
+  counter-reset: cardCount;
+  display: flex;
+  flex-direction: column;
+  --cardsGap: 1rem;
+  gap: var(--cardsGap);
+}
+.lista_cursos li {
+  counter-increment: cardCount;
+  display: flex;
+  color: white;
+  --labelOffset: 1rem;
+  --arrowClipSize: 1.5rem;
+  margin-top: var(--labelOffset);
+  padding-top: 5px;
+  animation: pag_conhecimentos 3s ease 0s 1 normal forwards;
+  background: transparent;
+}
+
+@keyframes pag_conhecimentos {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.lista_cursos li::before {
+  content: counter(cardCount, decimal-leading-zero);
+  background: white;
+  color: var(--cardColor);
+  font-size: 2em;
+  transform: translateY(calc(-1 * var(--labelOffset)));
+  margin-right: calc(-1 * var(--labelOffset));
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 0.5em;
+}
+
+.lista_cursos li .caixa_curso {
+  background-color: var(--cardColor);
+  --inlinePadding: 1em;
+  --boxPadding: 0.5em;
+  display: grid;
+  padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize))
+    var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
+  grid-template-areas:
+    "titulo"
+    "texto";
+  gap: 0.25em 1em;
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--arrowClipSize)) 0,
+    100% 50%,
+    calc(100% - var(--arrowClipSize)) 100%,
+    calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)),
+    0 calc(100% + var(--cardsGap))
+  );
+  position: relative;
+}
+.lista_cursos li .caixa_curso::before {
+  content: "";
+  position: absolute;
+  width: var(--labelOffset);
+  height: var(--labelOffset);
+  background: var(--cardColor);
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  filter: brightness(0.75);
+}
+
+.lista_cursos li .caixa_curso .titulo {
+  grid-area: titulo;
+  font-size: 20px;
+}
+
+.lista_cursos li .caixa_curso .texto {
+  grid-area: texto;
+  font-size: 15px;
+}
+
+
+/*OUTROS*/
+.outros_pag {
+  width: 50%;
+  margin-left: 4rem;
+  text-align: justify;
+  color: rgb(59, 5, 59);
+  animation: texto 3s ease normal forwards;
+}
+
+@keyframes texto {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/*GRAFICO*/
+.grafico_pag {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  animation: texto 3s ease normal forwards;
+}
